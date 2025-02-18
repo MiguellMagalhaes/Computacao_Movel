@@ -1,0 +1,74 @@
+# name: mediador_seguros_app
+# Descrição do projeto Flutter.
+name: mediador_seguros_app
+description: "A new Flutter project."
+
+# A linha abaixo impede que o pacote seja publicado acidentalmente no pub.dev.
+# Caso queira publicar, basta remover a linha abaixo.
+publish_to: 'none' # Remova esta linha se desejar publicar no pub.dev
+
+# Define a versão e o número de build do seu aplicativo (major.minor.patch+build).
+version: 1.0.0+1
+
+# Define a versão mínima e máxima suportada do SDK do Dart/Flutter.
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+# Secção de dependências do aplicativo.
+dependencies:
+  # Inclui o SDK do Flutter.
+  flutter:
+    sdk: flutter
+  # Ícones da biblioteca cupertino para iOS.
+  cupertino_icons: ^1.0.2
+  # Firebase Core para configuração base do Firebase.
+  firebase_core: ^3.8.1
+  # Firebase Auth para funcionalidades de autenticação do Firebase.
+  firebase_auth: ^5.3.4
+  # Cloud Firestore para base de dados NoSQL do Firebase.
+  cloud_firestore: ^5.5.1
+  # Biblioteca http para realizar requisições HTTP.
+  http: ^1.0.0
+  # Biblioteca para armazenar preferências locais de forma simples.
+  shared_preferences: ^2.0.15
+  # Biblioteca provider para gestão de estado (opcional).
+  provider: ^6.0.5
+
+# Secção de dependências de desenvolvimento.
+dev_dependencies:
+  # Biblioteca para testes de unidade e de widgets no Flutter.
+  flutter_test:
+    sdk: flutter
+  # Biblioteca para gerar ícones do aplicativo (launcher icons).
+  flutter_launcher_icons: ^0.9.2
+
+# Configurações para geração do ícone do aplicativo através do flutter_launcher_icons.
+flutter_icons:
+  # Caminho para a imagem do ícone.
+  image_path: "assets/images/app_icon.png"
+  # Gera ícone para Android? (false neste caso, apenas iOS = true).
+  android: false
+  ios: true
+  # Define a minSdkVersion para Android no flutter_launcher_icons.
+  min_sdk_android: 21
+
+# Configurações do Flutter para este projeto.
+flutter:
+  # Define que o projeto usa o design material do Flutter.
+  uses-material-design: true
+
+  # Lista de ativos (assets) do aplicativo, incluindo imagens.
+  assets:
+  
+    - assets/images/login_illustration.png
+    - assets/images/default_avatar.png
+    - assets/images/logo.png
+    - assets/images/app_icon.png
+
+
+# Trabalho realizado por:
+# -> Miguel Magalhães;
+# -> Nº:2021103166;
+# -> Unidade Curricular de Computação Móvel;
+# -> Licenciatura em Engenharia informática;
+# -> ISPGAYA
